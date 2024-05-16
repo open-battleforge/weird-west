@@ -1,0 +1,553 @@
+{
+  "name" : "United States Army",
+  "id" : "us_army",
+  "author" : "Xekon#8266",
+  "version" : "0.1",
+  "alliance" : "union",
+  "units" : {
+    "general" : {
+      "name" : "General",
+      "description" : "",
+      "category" : "leader",
+      "models" : [
+        {
+          "name" : "General",
+          "movement" : 5,
+          "courage" : 6,
+          "shoot" : 5,
+          "fight" : 6,
+          "defense" : 5,
+          "reflexes" : 6,
+          "weapons" : [
+            "frag_grenades",
+            "rifle",
+            "heavy_ccw"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "leader"
+          ],
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "rifle"
+              ],
+              "withWeapon" : [
+                "plasma_rifle",
+                "twin_rifle"
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                "rifle",
+                "heavy_ccw"
+              ],
+              "withWeapon" : [
+                {
+                  "id" : "energy_fist",
+                  "count" : 2
+                },
+                [
+                  "pistol",
+                  {
+                    "id" : "ccw",
+                    "count" : 2
+                  }
+                ]
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                "pistol"
+              ],
+              "withWeapon" : [
+                "plasma_pistol"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "general_bike" : {
+      "name" : "General on Jetbike",
+      "description" : "",
+      "category" : "leader",
+      "models" : [
+        {
+          "name" : "General on Hoverbike",
+          "movement" : 8,
+          "courage" : 6,
+          "shoot" : 5,
+          "fight" : 6,
+          "defense" : 5,
+          "reflexes" : 6,
+          "weapons" : [
+            "heavy_ccw",
+            "rifle",
+            "light_machine_gun",
+            "frag_grenades"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            {
+              "id" : "impact",
+              "x" : 1
+            },
+            {
+              "id" : "leader_x",
+              "x" : "Infantry, Biker"
+            }
+          ],
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "rifle"
+              ],
+              "withWeapon" : [
+                "plasma_rifle",
+                "twin_rifle"
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                "rifle",
+                "heavy_ccw"
+              ],
+              "withWeapon" : [
+                [
+                  "pistol",
+                  {
+                    "id" : "ccw",
+                    "count" : 2
+                  }
+                ],
+                {
+                  "id" : "energy_fist",
+                  "count" : 2
+                }
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                "pistol"
+              ],
+              "withWeapon" : [
+                "plasma_pistol"
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                "light_machine_gun"
+              ],
+              "withWeapon" : [
+                "heavy_machine_gun",
+                "rocket_launcher",
+                "flamethrower"
+              ]
+            }
+          ]
+        }
+      ],
+      "keywords" : [
+        "Biker"
+      ]
+    },
+    "union_sniper" : {
+      "name" : "Union Sniper",
+      "description" : "",
+      "category" : "specialist",
+      "models" : [
+        {
+          "name" : "Union Sniper",
+          "movement" : 6,
+          "courage" : 5,
+          "shoot" : 5,
+          "fight" : 5,
+          "defense" : 5,
+          "reflexes" : 5,
+          "weapons" : [
+            "sniper_rifle",
+            "heavy_ccw"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "sniper_rifle"
+              ],
+              "withWeapon" : [
+                "laser_sniper_rifle"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "union_rifleman" : {
+      "name" : "Union Rifleman",
+      "description" : "",
+      "category" : "core",
+      "models" : [
+        {
+          "name" : "Union Rifleman",
+          "movement" : 6,
+          "courage" : 5,
+          "shoot" : 5,
+          "fight" : 5,
+          "defense" : 5,
+          "reflexes" : 5,
+          "weapons" : [
+            "ccw",
+            "rifle",
+            "frag_grenades"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "rifle",
+                "ccw"
+              ],
+              "withWeapon" : [
+                [
+                  "pistol",
+                  {
+                    "id" : "ccw",
+                    "count" : 2
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "union_scout" : {
+      "name" : "Union Scout",
+      "description" : "",
+      "category" : "core",
+      "models" : [
+        {
+          "name" : "Union Scout",
+          "movement" : 6,
+          "courage" : 5,
+          "shoot" : 5,
+          "fight" : 5,
+          "defense" : 5,
+          "reflexes" : 5,
+          "weapons" : [
+            "ccw",
+            "carbine",
+            "frag_grenades"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "scout"
+          ],
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "carbine"
+              ],
+              "withWeapon" : [
+                "shotgun"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "union_sergeant" : {
+      "name" : "Union Sergeant",
+      "description" : "",
+      "category" : "leader",
+      "models" : [
+        {
+          "name" : "Union Sergeant",
+          "movement" : 6,
+          "courage" : 5,
+          "shoot" : 5,
+          "fight" : 6,
+          "defense" : 5,
+          "reflexes" : 5,
+          "weapons" : [
+            "heavy_ccw",
+            "rifle",
+            "frag_grenades"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "rifle"
+              ],
+              "withWeapon" : [
+                "combi_fusion",
+                "combi_flamethrower",
+                "combi_plasma",
+                "twin_rifle"
+              ]
+            }
+          ],
+          "rules" : [
+            "leader"
+          ]
+        }
+      ]
+    },
+    "robot_hound" : {
+      "name" : "Robot Hound",
+      "description" : "A mechanical beast, hunting down anyone and anything.",
+      "category" : "core",
+      "models" : [
+        {
+          "name" : "Robot Hound",
+          "movement" : 7,
+          "courage" : 4,
+          "shoot" : 4,
+          "fight" : 5,
+          "defense" : 4,
+          "reflexes" : 5,
+          "weapons" : [
+            {
+              "id" : "heavy_ccw",
+              "count" : 2
+            }
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "scout"
+          ]
+        }
+      ],
+      "keywords" : [
+        "Automaton"
+      ]
+    },
+    "gun_hound" : {
+      "name" : "Gun Hound",
+      "description" : "A mechanical beast, armed with heavy weaponry.",
+      "category" : "heavy",
+      "models" : [
+        {
+          "name" : "Gun Hound",
+          "movement" : 7,
+          "courage" : 4,
+          "shoot" : 5,
+          "fight" : 4,
+          "defense" : 5,
+          "reflexes" : 5,
+          "weapons" : [
+            {
+              "id" : "heavy_ccw",
+              "count" : 2
+            },
+            "light_machine_gun"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "light_machine_gun"
+              ],
+              "withWeapon" : [
+                "heavy_machine_gun",
+                "rocket_launcher",
+                "flamethrower"
+              ]
+            }
+          ]
+        }
+      ],
+      "keywords" : [
+        "Automaton"
+      ]
+    },
+    "union_heavy" : {
+      "name" : "Union Heavy",
+      "description" : "",
+      "category" : "heavy",
+      "models" : [
+        {
+          "name" : "Union Heavy",
+          "movement" : 6,
+          "courage" : 5,
+          "shoot" : 6,
+          "fight" : 5,
+          "defense" : 5,
+          "reflexes" : 5,
+          "weapons" : [
+            "ccw",
+            "frag_grenades",
+            "flamethrower"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "flamethrower"
+              ],
+              "withWeapon" : [
+                "grenade_launcher",
+                "light_machine_gun"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "union_cavalier" : {
+      "name" : "Union Cavalier on Iron Horse",
+      "description" : "",
+      "category" : "specialist",
+      "models" : [
+        {
+          "name" : "Union Cavalier on Iron Horse",
+          "movement" : 8,
+          "courage" : 5,
+          "shoot" : 5,
+          "fight" : 5,
+          "defense" : 5,
+          "reflexes" : 5,
+          "weapons" : [
+            "pistol",
+            {
+              "id" : "trample",
+              "count" : 2
+            },
+            {
+              "id" : "heavy_ccw",
+              "count" : 2
+            },
+            "frag_grenades"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            {
+              "id" : "impact",
+              "x" : 1
+            },
+            "outflank"
+          ],
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "pistol"
+              ],
+              "withWeapon" : [
+                "plasma_pistol"
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                "pistol",
+                {
+                  "id" : "heavy_ccw",
+                  "count" : 2
+                }
+              ],
+              "withWeapon" : [
+                [
+                  "rifle",
+                  "heavy_ccw"
+                ],
+                [
+                  "grenade_launcher",
+                  "ccw"
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "keywords" : [
+        "Biker"
+      ]
+    },
+    "union_destroyer" : {
+      "name" : "Union Destroyer",
+      "description" : "",
+      "rules" : [
+        "ambush"
+      ],
+      "category" : "support",
+      "models" : [
+        {
+          "name" : "Union Destroyer",
+          "movement" : 5,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 9,
+          "reflexes" : 6,
+          "weapons" : [
+            "twin_rifle",
+            {
+              "id" : "heavy_ccw",
+              "count" : 2
+            }
+          ],
+          "options" : [
+            {
+              "replaceWeapon" : "twin_rifle",
+              "withWeapon" : [
+                "combi_plasma",
+                "combi_flamethrower",
+                "combi_fusion"
+              ]
+            },
+            {
+              "replaceWeapon" : {
+                "id" : "heavy_ccw",
+                "count" : 2
+              },
+              "withWeapon" : [
+                {
+                  "id" : "energy_ccw",
+                  "count" : 2
+                },
+                {
+                  "id" : "energy_fist",
+                  "count" : 2
+                }
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                "twin_rifle",
+                {
+                  "id" : "heavy_ccw",
+                  "count" : 2
+                }
+              ],
+              "withWeapon" : [
+                {
+                  "id" : "energy_ccw",
+                  "count" : 4
+                }
+              ]
+            }
+          ],
+          "min" : 1,
+          "max" : 1
+        }
+      ]
+    }
+  },
+  "weapons" : {},
+  "rules" : {},
+  "powers" : {},
+  "strategies" : [],
+  "relics" : [],
+  "color" : "#0d407f"
+}

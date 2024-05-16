@@ -1,0 +1,852 @@
+{
+  "name" : "Starborn Guardians",
+  "id" : "stargazers",
+  "author" : "Xekon#8266",
+  "version" : "0.1",
+  "alliance" : "aliens",
+  "units" : {
+    "storm_alpha" : {
+      "name" : "Storm Alpha",
+      "description" : "",
+      "category" : "leader",
+      "models" : [
+        {
+          "name" : "Storm Alpha",
+          "movement" : 6,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 7,
+          "reflexes" : 7,
+          "weapons" : [
+            {
+              "id" : "celestial_stave",
+              "count" : 2
+            },
+            "blaster"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "leader",
+            "ambush",
+            "xenoshield"
+          ]
+        }
+      ]
+    },
+    "grey_spawn" : {
+      "name" : "Grey Spawn",
+      "description" : "",
+      "category" : "core",
+      "models" : [
+        {
+          "name" : "Grey Spawn",
+          "movement" : 5,
+          "courage" : 4,
+          "shoot" : 5,
+          "fight" : 4,
+          "defense" : 4,
+          "reflexes" : 5,
+          "weapons" : [
+            "light_ccw",
+            "pulse_rifle"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "fearless",
+            "xenoshield"
+          ],
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "pulse_rifle"
+              ],
+              "withWeapon" : [
+                "plasma_carbine",
+                "laser_rifle"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "shadow_alpha" : {
+      "name" : "Shadow Alpha",
+      "description" : "",
+      "category" : "leader",
+      "models" : [
+        {
+          "name" : "Shadow Alpha",
+          "movement" : 7,
+          "courage" : 6,
+          "shoot" : 5,
+          "fight" : 7,
+          "defense" : 5,
+          "reflexes" : 6,
+          "weapons" : [
+            {
+              "id" : "talons",
+              "count" : 2
+            },
+            "spiked_tail"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "leader",
+            "evasive",
+            "agile"
+          ]
+        }
+      ]
+    },
+    "mind_alpha" : {
+      "name" : "Mind Alpha",
+      "description" : "",
+      "category" : "leader",
+      "models" : [
+        {
+          "name" : "Mind Alpha",
+          "movement" : 5,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 6,
+          "reflexes" : 6,
+          "weapons" : [
+            "stun_touch",
+            "smoke_grenades",
+            "neuronic_wail"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "leader",
+            "outflank"
+          ]
+        }
+      ]
+    },
+    "arcane_alpha" : {
+      "name" : "Arcane Alpha",
+      "description" : "",
+      "category" : "leader",
+      "models" : [
+        {
+          "name" : "Arcane Alpha",
+          "movement" : 5,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 5,
+          "defense" : 6,
+          "reflexes" : 6,
+          "weapons" : [
+            {
+              "id" : "arcane_spike",
+              "count" : 2
+            },
+            {
+              "id" : "blazing_fist",
+              "count" : 2
+            },
+            "spirit_blast"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "leader",
+            "evasive",
+            "xenoshield"
+          ]
+        }
+      ]
+    },
+    "grey_spawn_heavy" : {
+      "name" : "Grey Spawn Heavy",
+      "description" : "",
+      "category" : "heavy",
+      "models" : [
+        {
+          "name" : "Grey Spawn Heavy",
+          "movement" : 5,
+          "courage" : 4,
+          "shoot" : 5,
+          "fight" : 4,
+          "defense" : 4,
+          "reflexes" : 5,
+          "weapons" : [
+            "light_ccw",
+            "pulse_rifle"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "fearless",
+            "xenoshield"
+          ],
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "pulse_rifle"
+              ],
+              "withWeapon" : [
+                {
+                  "id" : "plasma_rifle",
+                  "count" : 3
+                },
+                "fusion_cannon",
+                "hyper_rifle"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "grey_jetpack_spawn" : {
+      "name" : "Grey Spawn with Jetpack",
+      "description" : "",
+      "category" : "core",
+      "models" : [
+        {
+          "name" : "Grey Spawn with Jetpack",
+          "movement" : 5,
+          "courage" : 4,
+          "shoot" : 5,
+          "fight" : 4,
+          "defense" : 4,
+          "reflexes" : 5,
+          "weapons" : [
+            "light_ccw",
+            "pulse_rifle"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "fearless",
+            "xenoshield",
+            "fly",
+            "ambush"
+          ]
+        }
+      ]
+    },
+    "elite_spawn" : {
+      "name" : "Elite Spawn",
+      "description" : "",
+      "category" : "heavy",
+      "models" : [
+        {
+          "name" : "Elite Spawn",
+          "movement" : 5,
+          "courage" : 4,
+          "shoot" : 5,
+          "fight" : 4,
+          "defense" : 4,
+          "reflexes" : 5,
+          "weapons" : [
+            "light_ccw",
+            "pulse_rifle",
+            "proton_disruptor"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "fearless",
+            "xenoshield",
+            "deadeye"
+          ],
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "proton_disruptor"
+              ],
+              "withWeapon" : [
+                "plasmid_repeater",
+                "plasmid_lance",
+                "bolt_launcher"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "storm_spawn" : {
+      "name" : "Storm Spawn",
+      "description" : "",
+      "category" : "core",
+      "models" : [
+        {
+          "name" : "Storm Spawn",
+          "movement" : 6,
+          "courage" : 5,
+          "shoot" : 5,
+          "fight" : 5,
+          "defense" : 5,
+          "reflexes" : 6,
+          "weapons" : [
+            {
+              "id" : "blaster",
+              "count" : 2
+            },
+            "light_ccw"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "ambush",
+            "xenoshield"
+          ]
+        }
+      ]
+    },
+    "storm_elite_spawn" : {
+      "name" : "Storm Elite Spawn",
+      "description" : "",
+      "category" : "heavy",
+      "models" : [
+        {
+          "name" : "Storm Elite Spawn",
+          "movement" : 6,
+          "courage" : 5,
+          "shoot" : 5,
+          "fight" : 5,
+          "defense" : 5,
+          "reflexes" : 6,
+          "weapons" : [
+            "light_ccw",
+            "blaster",
+            "bolt_launcher",
+            "proton_disruptor"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "ambush",
+            "xenoshield"
+          ],
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "proton_disruptor"
+              ],
+              "withWeapon" : [
+                "plasmid_repeater",
+                "plasmid_lance",
+                "bolt_launcher"
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                "bolt_launcher"
+              ],
+              "withWeapon" : [
+                "plasmid_repeater",
+                "plasmid_lance",
+                "proton_disruptor"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "storm_beta" : {
+      "name" : "Storm Beta",
+      "description" : "",
+      "category" : "specialist",
+      "models" : [
+        {
+          "name" : "Storm Beta",
+          "movement" : 6,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 5,
+          "defense" : 6,
+          "reflexes" : 7,
+          "weapons" : [
+            "plasmid_axe",
+            "blaster",
+            "bolt_launcher",
+            "proton_disruptor"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "ambush",
+            "xenoshield"
+          ],
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "proton_disruptor"
+              ],
+              "withWeapon" : [
+                "plasmid_repeater",
+                "plasmid_lance",
+                "bolt_launcher"
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                "bolt_launcher"
+              ],
+              "withWeapon" : [
+                "plasmid_repeater",
+                "plasmid_lance",
+                "proton_disruptor"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "storm_gamma" : {
+      "name" : "Storm Gamma",
+      "description" : "",
+      "category" : "specialist",
+      "models" : [
+        {
+          "name" : "Storm Gamma",
+          "movement" : 6,
+          "courage" : 6,
+          "shoot" : 5,
+          "fight" : 7,
+          "defense" : 6,
+          "reflexes" : 7,
+          "weapons" : [
+            {
+              "id" : "plasmid_axe",
+              "count" : 2
+            }
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "ambush",
+            "xenoshield",
+            "support"
+          ]
+        }
+      ]
+    },
+    "shadow_spawn" : {
+      "name" : "Shadow Spawn",
+      "description" : "",
+      "category" : "core",
+      "models" : [
+        {
+          "name" : "Shadow Spawn",
+          "movement" : 5,
+          "courage" : 5,
+          "shoot" : 5,
+          "fight" : 5,
+          "defense" : 6,
+          "reflexes" : 5,
+          "weapons" : [
+            "fusion_carbine",
+            {
+              "id" : "talons",
+              "count" : 2
+            }
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "xenoshield",
+            "scout",
+            "furious"
+          ]
+        }
+      ]
+    },
+    "granite_beta" : {
+      "name" : "Granite Beta",
+      "description" : "",
+      "category" : "specialist",
+      "models" : [
+        {
+          "name" : "Granite Beta",
+          "movement" : 5,
+          "courage" : 5,
+          "shoot" : 6,
+          "fight" : 5,
+          "defense" : 5,
+          "reflexes" : 5,
+          "weapons" : [
+            "plasmid_lance",
+            "light_ccw",
+            "solar_grenades"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "deadeye",
+            "xenoshield"
+          ]
+        }
+      ]
+    },
+    "solar_spawn" : {
+      "name" : "Solar Spawn",
+      "description" : "",
+      "category" : "specialist",
+      "models" : [
+        {
+          "name" : "Solar Spawn",
+          "movement" : 5,
+          "courage" : 5,
+          "shoot" : 5,
+          "fight" : 5,
+          "defense" : 5,
+          "reflexes" : 5,
+          "weapons" : [
+            "light_ccw",
+            "laser_rifle"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "fearless",
+            "xenoshield"
+          ]
+        }
+      ]
+    },
+    "mind_beta" : {
+      "name" : "Mind Beta",
+      "description" : "",
+      "category" : "specialist",
+      "models" : [
+        {
+          "name" : "Mind Beta",
+          "movement" : 5,
+          "courage" : 6,
+          "shoot" : 5,
+          "fight" : 5,
+          "defense" : 5,
+          "reflexes" : 6,
+          "weapons" : [
+            "stun_touch",
+            "smoke_grenades",
+            "neuronic_wail"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "outflank"
+          ]
+        }
+      ]
+    },
+    "mind_abomination" : {
+      "name" : "Mind Abomination",
+      "description" : "",
+      "category" : "heavy",
+      "models" : [
+        {
+          "name" : "Mind Abomination",
+          "movement" : 6,
+          "courage" : 6,
+          "shoot" : 5,
+          "fight" : 6,
+          "defense" : 6,
+          "reflexes" : 6,
+          "weapons" : [
+            "neuronic_wail",
+            {
+              "id" : "razor_claw",
+              "count" : 3
+            },
+            "hazard_explosion"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "evasive",
+            "last_word"
+          ]
+        }
+      ]
+    },
+    "mind_spawn" : {
+      "name" : "Mind Spawn",
+      "description" : "",
+      "category" : "core",
+      "models" : [
+        {
+          "name" : "Mind Spawn",
+          "movement" : 5,
+          "courage" : 5,
+          "shoot" : 4,
+          "fight" : 4,
+          "defense" : 4,
+          "reflexes" : 6,
+          "weapons" : [
+            "stun_touch"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "ambush"
+          ]
+        }
+      ]
+    }
+  },
+  "weapons" : {
+    "celestial_stave" : {
+      "name" : "Celestial Stave",
+      "attacks" : 1,
+      "ap" : 3,
+      "short" : "Melee",
+      "rules" : [
+        "lethal",
+        {
+          "id" : "reach",
+          "x" : 1
+        },
+        "shield"
+      ]
+    },
+    "blaster" : {
+      "name" : "Blaster",
+      "attacks" : 1,
+      "ap" : 2,
+      "rules" : [
+        "pistol",
+        "push_crit"
+      ],
+      "short" : 6,
+      "medium" : 12
+    },
+    "talons" : {
+      "name" : "Ripper Talons",
+      "attacks" : 1,
+      "ap" : 2,
+      "short" : "Melee",
+      "rules" : [
+        "lethal",
+        "shield"
+      ]
+    },
+    "spiked_tail" : {
+      "name" : "Spiked Tail",
+      "attacks" : 1,
+      "ap" : 1,
+      "short" : "Melee",
+      "rules" : [
+        {
+          "id" : "reach",
+          "x" : 1
+        }
+      ]
+    },
+    "stun_touch" : {
+      "name" : "Stunning Touch",
+      "attacks" : 1,
+      "short" : "Melee",
+      "rules" : [
+        "stun"
+      ]
+    },
+    "neuronic_wail" : {
+      "name" : "Neuronic Wail",
+      "attacks" : 1,
+      "short" : 9,
+      "rules" : [
+        "flame",
+        {
+          "id" : "blast",
+          "x" : 3
+        }
+      ],
+      "ap" : 3
+    },
+    "spirit_blast" : {
+      "name" : "Spirit Blast",
+      "attacks" : 1,
+      "ap" : 4,
+      "short" : 9,
+      "rules" : [
+        "push_crit"
+      ]
+    },
+    "pulse_rifle" : {
+      "name" : "Pulse Rifle",
+      "attacks" : 3,
+      "short" : 9,
+      "medium" : 18
+    },
+    "laser_rifle" : {
+      "name" : "Laser Rifle",
+      "attacks" : 1,
+      "ap" : 2,
+      "rules" : [
+        "lethal",
+        "hazardous_crit"
+      ],
+      "short" : 9,
+      "medium" : 18
+    },
+    "arcane_spike" : {
+      "name" : "Arcane Spike",
+      "attacks" : 1,
+      "ap" : 1,
+      "rules" : [
+        "pistol",
+        "portal_weapon",
+        "unreliable"
+      ],
+      "short" : 6,
+      "medium" : 12
+    },
+    "fusion_cannon" : {
+      "name" : "Fusion Cannon",
+      "ap" : 3,
+      "attacks" : 1,
+      "short" : 9,
+      "medium" : 18,
+      "rules" : [
+        {
+          "id" : "blast",
+          "x" : 3
+        },
+        "lethal"
+      ]
+    },
+    "hyper_rifle" : {
+      "name" : "Hyper Rifle",
+      "ap" : 4,
+      "attacks" : 1,
+      "short" : 12,
+      "medium" : 24,
+      "rules" : [
+        "lethal",
+        "reload"
+      ]
+    },
+    "proton_disruptor" : {
+      "name" : "Proton Disruptor",
+      "ap" : 2,
+      "attacks" : 2,
+      "short" : 6,
+      "medium" : 12,
+      "rules" : [
+        "stun_crit"
+      ]
+    },
+    "plasmid_repeater" : {
+      "name" : "Plasmid Repeater",
+      "ap" : 2,
+      "attacks" : 2,
+      "short" : 9,
+      "rules" : [
+        "rapid_fire",
+        "flame",
+        "linked"
+      ]
+    },
+    "bolt_launcher" : {
+      "name" : "Bolt Launcher",
+      "ap" : 1,
+      "attacks" : 3,
+      "short" : 9,
+      "medium" : 18,
+      "rules" : [
+        "lethal"
+      ]
+    },
+    "plasmid_lance" : {
+      "name" : "Plasmid Lance",
+      "ap" : 3,
+      "attacks" : 1,
+      "short" : 9,
+      "medium" : 18,
+      "rules" : [
+        "lethal"
+      ]
+    },
+    "blazing_fist" : {
+      "name" : "Blazing Fist",
+      "attacks" : 1,
+      "ap" : 2,
+      "short" : "Melee",
+      "rules" : [
+        "hazardous"
+      ]
+    },
+    "plasmid_axe" : {
+      "name" : "Plasmid Axe",
+      "attacks" : 1,
+      "ap" : 2,
+      "short" : "Melee",
+      "rules" : [
+        "lethal"
+      ]
+    },
+    "fusion_carbine" : {
+      "name" : "Fusion Carbine",
+      "attacks" : 1,
+      "short" : 9,
+      "medium" : 18,
+      "ap" : 3,
+      "rules" : [
+        {
+          "id" : "critical",
+          "x" : 1
+        }
+      ]
+    },
+    "solar_grenades" : {
+      "name" : "Solar Grenades",
+      "attacks" : 1,
+      "short" : 6,
+      "rules" : [
+        "grenade",
+        "smoke",
+        "indirect",
+        {
+          "id" : "blast",
+          "x" : 3
+        },
+        "hazardous_crit"
+      ]
+    },
+    "razor_claw" : {
+      "name" : "Razor Claw",
+      "attacks" : 1,
+      "ap" : 2,
+      "short" : "Melee",
+      "rules" : [
+        "lethal"
+      ]
+    },
+    "hazard_explosion" : {
+      "name" : "Hazardous Explosion",
+      "attacks" : 1,
+      "rules" : [
+        "self_destruction",
+        "hazardous",
+        {
+          "id" : "blast",
+          "x" : 3
+        }
+      ],
+      "short" : "Melee"
+    }
+  },
+  "rules" : {
+    "xenoshield" : {
+      "name" : "Xenoshield",
+      "description" : "This model may ignore the first point of AP from ranged attacks. Weapons with AP 4 or greater ignore this rule.",
+      "points" : [
+        2
+      ]
+    }
+  },
+  "powers" : {},
+  "strategies" : [],
+  "relics" : [],
+  "color" : "#D6B85A"
+}

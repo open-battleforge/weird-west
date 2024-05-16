@@ -1,0 +1,339 @@
+{
+  "name" : "Celestial Order",
+  "id" : "celestials",
+  "author" : "Xekon#8266",
+  "version" : "0.1",
+  "alliance" : "aliens",
+  "units" : {
+    "battlepriest" : {
+      "name" : "Battlepriest",
+      "description" : "",
+      "category" : "leader",
+      "models" : [
+        {
+          "name" : "Battlepriest",
+          "movement" : 6,
+          "courage" : 6,
+          "shoot" : 5,
+          "fight" : 6,
+          "defense" : 6,
+          "reflexes" : 6,
+          "weapons" : [
+            "celestial_staff",
+            "pistol",
+            "plasma_grenades"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "leader",
+            "portal_mastery"
+          ],
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "pistol"
+              ],
+              "withWeapon" : [
+                "plasma_pistol"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "crusader" : {
+      "name" : "Crusader",
+      "description" : "",
+      "category" : "leader",
+      "models" : [
+        {
+          "name" : "Crusader",
+          "movement" : 6,
+          "courage" : 6,
+          "shoot" : 5,
+          "fight" : 6,
+          "defense" : 6,
+          "reflexes" : 6,
+          "weapons" : [
+            "rifle",
+            "plasma_grenades",
+            {
+              "id" : "energy_ccw",
+              "count" : 2
+            }
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "leader",
+            "furious"
+          ],
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "rifle"
+              ],
+              "withWeapon" : [
+                "plasma_rifle",
+                "twin_rifle"
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                {
+                  "id" : "energy_ccw",
+                  "count" : 2
+                }
+              ],
+              "withWeapon" : [
+                {
+                  "id" : "energy_fist",
+                  "count" : 2
+                }
+              ]
+            },
+            {
+              "addRule" : [
+                "shield_generator"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "cohort" : {
+      "name" : "Cohort",
+      "description" : "",
+      "category" : "core",
+      "models" : [
+        {
+          "name" : "Cohort",
+          "movement" : 6,
+          "courage" : 5,
+          "shoot" : 5,
+          "fight" : 6,
+          "defense" : 5,
+          "reflexes" : 5,
+          "weapons" : [
+            "heavy_ccw",
+            "carbine"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "scout"
+          ],
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "carbine",
+                "heavy_ccw"
+              ],
+              "withWeapon" : [
+                [
+                  "pistol",
+                  {
+                    "id" : "heavy_ccw",
+                    "count" : 2
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "squire" : {
+      "name" : "Squire",
+      "description" : "",
+      "category" : "core",
+      "models" : [
+        {
+          "name" : "Squire",
+          "movement" : 6,
+          "courage" : 5,
+          "shoot" : 5,
+          "fight" : 6,
+          "defense" : 5,
+          "reflexes" : 5,
+          "weapons" : [
+            "energy_ccw",
+            "rifle"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "rifle"
+              ],
+              "withWeapon" : [
+                "sniper_rifle"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "knight" : {
+      "name" : "Knight",
+      "description" : "",
+      "category" : "specialist",
+      "models" : [
+        {
+          "name" : "Knight",
+          "movement" : 6,
+          "courage" : 5,
+          "shoot" : 5,
+          "fight" : 6,
+          "defense" : 6,
+          "reflexes" : 5,
+          "weapons" : [
+            "energy_ccw",
+            "rifle"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "rifle"
+              ],
+              "withWeapon" : [
+                "plasma_rifle",
+                "twin_rifle"
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                "energy_ccw"
+              ],
+              "withWeapon" : [
+                "energy_fist"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "paladin" : {
+      "name" : "Paladin",
+      "description" : "",
+      "category" : "heavy",
+      "models" : [
+        {
+          "name" : "Paladin",
+          "movement" : 6,
+          "courage" : 5,
+          "shoot" : 5,
+          "fight" : 6,
+          "defense" : 6,
+          "reflexes" : 5,
+          "weapons" : [
+            "energy_ccw",
+            "light_machine_gun"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "relentless"
+          ],
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "light_machine_gun"
+              ],
+              "withWeapon" : [
+                "heavy_machine_gun",
+                "twin_plasma_rifle"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "arc_witch" : {
+      "name" : "Arc-Witch",
+      "description" : "",
+      "category" : "specialist",
+      "models" : [
+        {
+          "name" : "Arc-Witch",
+          "movement" : 6,
+          "courage" : 5,
+          "shoot" : 5,
+          "fight" : 5,
+          "defense" : 5,
+          "reflexes" : 5,
+          "weapons" : [
+            "energy_ccw",
+            "plasma_pistol"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "ambush",
+            "portal_mastery"
+          ],
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "plasma_pistol"
+              ],
+              "withWeapon" : [
+                "flamethrower_pistol",
+                "fusion_pistol"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "node" : {
+      "name" : "Celestial Node",
+      "description" : "",
+      "category" : "support",
+      "models" : [
+        {
+          "name" : "Celestial Node",
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "portal",
+            "deployable"
+          ],
+          "courage" : "-",
+          "reflexes" : "-",
+          "fight" : "-",
+          "defense" : "-",
+          "shoot" : "-",
+          "movement" : "-"
+        }
+      ],
+      "keywords" : [
+        "Portal"
+      ]
+    }
+  },
+  "weapons" : {
+    "celestial_staff" : {
+      "name" : "Celestial Staff",
+      "attacks" : 1,
+      "ap" : 1,
+      "short" : "Melee",
+      "rules" : [
+        "rending",
+        {
+          "id" : "reach",
+          "x" : 1
+        }
+      ]
+    }
+  },
+  "rules" : {},
+  "powers" : {},
+  "strategies" : [],
+  "relics" : [],
+  "color" : "#D6B85A"
+}

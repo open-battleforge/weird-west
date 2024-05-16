@@ -1,0 +1,891 @@
+{
+  "name" : "United States Marshals",
+  "id" : "us_marshals",
+  "author" : "Xekon#8266",
+  "version" : "0.1",
+  "alliance" : "lawmen",
+  "color" : "#0d407f",
+  "units" : {
+    "marshal" : {
+      "name" : "US Marshal",
+      "description" : "A United States marshal, scrambling to enforce the law in the wastelands.",
+      "category" : "leader",
+      "models" : [
+        {
+          "name" : "US Marshal",
+          "movement" : 6,
+          "courage" : 7,
+          "shoot" : 5,
+          "fight" : 6,
+          "defense" : 6,
+          "reflexes" : 6,
+          "weapons" : [
+            "combi_rifle",
+            "ccw",
+            "frag_grenades"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "leader",
+            {
+              "id" : "wounds",
+              "x" : 3
+            },
+            {
+              "id" : "ranged_tactics",
+              "x" : 1
+            }
+          ],
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "combi_rifle"
+              ],
+              "withWeapon" : [
+                "combi_plasma",
+                "combi_shotgun",
+                "sniper_rifle",
+                "combi_flamethrower",
+                "combi_fusion"
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                "combi_rifle",
+                "ccw"
+              ],
+              "withWeapon" : [
+                [
+                  "revolver",
+                  {
+                    "id" : "heavy_ccw",
+                    "count" : 2
+                  }
+                ]
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                {
+                  "id" : "heavy_ccw",
+                  "count" : 2
+                }
+              ],
+              "withWeapon" : [
+                {
+                  "id" : "energy_sword",
+                  "count" : 2
+                },
+                {
+                  "id" : "energy_fist",
+                  "count" : 2
+                },
+                {
+                  "id" : "energy_hammer",
+                  "count" : 2
+                },
+                {
+                  "id" : "energy_claw",
+                  "count" : 3
+                }
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                "revolver"
+              ],
+              "withWeapon" : [
+                "plasma_pistol",
+                "fusion_pistol",
+                "flamethrower_pistol",
+                {
+                  "id" : "revolver",
+                  "count" : 2
+                }
+              ]
+            },
+            {
+              "replaceRule" : [
+                {
+                  "id" : "ranged_tactics",
+                  "x" : 1
+                }
+              ],
+              "withRule" : [
+                {
+                  "id" : "melee_tactics",
+                  "x" : 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "sheriff" : {
+      "name" : "Sheriff",
+      "description" : "A local peace-keeper, trained to take down fearsome criminals",
+      "category" : "leader",
+      "models" : [
+        {
+          "name" : "Sheriff",
+          "movement" : 6,
+          "courage" : 6,
+          "shoot" : 5,
+          "fight" : 5,
+          "defense" : 6,
+          "reflexes" : 6,
+          "weapons" : [
+            "frag_grenades",
+            "combi_rifle",
+            "ccw"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "leader",
+            {
+              "id" : "wounds",
+              "x" : 2
+            }
+          ],
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "combi_rifle"
+              ],
+              "withWeapon" : [
+                "combi_plasma",
+                "combi_shotgun",
+                "sniper_rifle",
+                "combi_flamethrower",
+                "combi_fusion"
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                "combi_rifle",
+                "ccw"
+              ],
+              "withWeapon" : [
+                [
+                  "revolver",
+                  {
+                    "id" : "heavy_ccw",
+                    "count" : 2
+                  }
+                ]
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                {
+                  "id" : "heavy_ccw",
+                  "count" : 2
+                }
+              ],
+              "withWeapon" : [
+                {
+                  "id" : "energy_sword",
+                  "count" : 2
+                },
+                {
+                  "id" : "energy_fist",
+                  "count" : 2
+                },
+                {
+                  "id" : "energy_hammer",
+                  "count" : 2
+                },
+                {
+                  "id" : "energy_claw",
+                  "count" : 3
+                }
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                "revolver"
+              ],
+              "withWeapon" : [
+                "plasma_pistol",
+                "fusion_pistol",
+                "flamethrower_pistol",
+                {
+                  "id" : "revolver",
+                  "count" : 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "marshal_bike" : {
+      "name" : "US Marshal on Hoverbike",
+      "description" : "A United States marshal, driving a hoverbike to bring justice to the frontier.",
+      "category" : "leader",
+      "models" : [
+        {
+          "name" : "US Marshal on Hoverbike",
+          "movement" : 8,
+          "courage" : 7,
+          "shoot" : 5,
+          "fight" : 6,
+          "defense" : 6,
+          "reflexes" : 6,
+          "weapons" : [
+            "ccw",
+            "combi_rifle",
+            "frag_grenades",
+            {
+              "id" : "lmg",
+              "mount" : [
+                "Front"
+              ]
+            }
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "leader",
+            {
+              "id" : "impact",
+              "x" : 1
+            },
+            {
+              "id" : "wounds",
+              "x" : 3
+            },
+            {
+              "id" : "ranged_tactics",
+              "x" : 1
+            }
+          ],
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "combi_rifle"
+              ],
+              "withWeapon" : [
+                "combi_plasma",
+                "combi_shotgun",
+                "sniper_rifle",
+                "combi_flamethrower",
+                "combi_fusion"
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                {
+                  "id" : "lmg",
+                  "mount" : [
+                    "Front"
+                  ]
+                }
+              ],
+              "withWeapon" : [
+                {
+                  "id" : "gatling_gun",
+                  "mount" : [
+                    "Front"
+                  ]
+                },
+                {
+                  "id" : "twin_flamethrower",
+                  "mount" : [
+                    "Front"
+                  ]
+                },
+                {
+                  "id" : "twin_plasma_rifle",
+                  "mount" : [
+                    "Front"
+                  ]
+                },
+                {
+                  "id" : "twin_fusion_rifle",
+                  "mount" : [
+                    "Front"
+                  ]
+                }
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                "combi_rifle",
+                "ccw"
+              ],
+              "withWeapon" : [
+                [
+                  "revolver",
+                  {
+                    "id" : "heavy_ccw",
+                    "count" : 2
+                  }
+                ]
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                {
+                  "id" : "heavy_ccw",
+                  "count" : 2
+                }
+              ],
+              "withWeapon" : [
+                {
+                  "id" : "energy_sword",
+                  "count" : 2
+                },
+                {
+                  "id" : "energy_fist",
+                  "count" : 2
+                },
+                {
+                  "id" : "energy_hammer",
+                  "count" : 2
+                },
+                {
+                  "id" : "energy_claw",
+                  "count" : 3
+                }
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                "revolver"
+              ],
+              "withWeapon" : [
+                "plasma_pistol",
+                "fusion_pistol",
+                "flamethrower_pistol",
+                {
+                  "id" : "revolver",
+                  "count" : 2
+                }
+              ]
+            },
+            {
+              "replaceRule" : [
+                {
+                  "id" : "ranged_tactics",
+                  "x" : 1
+                }
+              ],
+              "withRule" : [
+                {
+                  "id" : "melee_tactics",
+                  "x" : 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "deputy" : {
+      "name" : "US Deputy",
+      "description" : "A United States deputy, bringing justice to the frontier.",
+      "category" : "specialist",
+      "models" : [
+        {
+          "name" : "US Deputy",
+          "movement" : 6,
+          "courage" : 5,
+          "shoot" : 5,
+          "fight" : 6,
+          "defense" : 6,
+          "reflexes" : 6,
+          "weapons" : [
+            "frag_grenades",
+            "revolver",
+            {
+              "id" : "heavy_ccw",
+              "count" : 2
+            }
+          ],
+          "min" : 1,
+          "max" : 1,
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "revolver"
+              ],
+              "withWeapon" : [
+                "plasma_pistol",
+                "flamethrower_pistol",
+                "fusion_pistol"
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                {
+                  "id" : "heavy_ccw",
+                  "count" : 2
+                }
+              ],
+              "withWeapon" : [
+                {
+                  "id" : "energy_fist",
+                  "count" : 2
+                },
+                {
+                  "id" : "energy_hammer",
+                  "count" : 2
+                },
+                {
+                  "id" : "energy_claw",
+                  "count" : 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "deputy_bike" : {
+      "name" : "US Deputy on Hoverbike",
+      "description" : "A United States deputy, driving a hoverbike to bring justice to the frontier.",
+      "category" : "strike",
+      "models" : [
+        {
+          "name" : "US Deputy on Hoverbike",
+          "movement" : 8,
+          "courage" : 5,
+          "shoot" : 5,
+          "fight" : 6,
+          "defense" : 6,
+          "reflexes" : 6,
+          "weapons" : [
+            "frag_grenades",
+            "revolver",
+            {
+              "id" : "heavy_ccw",
+              "count" : 2
+            },
+            {
+              "id" : "lmg",
+              "mount" : [
+                "Front"
+              ]
+            }
+          ],
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "revolver"
+              ],
+              "withWeapon" : [
+                "plasma_pistol",
+                "flamethrower_pistol",
+                "fusion_pistol"
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                {
+                  "id" : "heavy_ccw",
+                  "count" : 2
+                }
+              ],
+              "withWeapon" : [
+                {
+                  "id" : "energy_fist",
+                  "count" : 2
+                },
+                {
+                  "id" : "energy_hammer",
+                  "count" : 2
+                },
+                {
+                  "id" : "energy_claw",
+                  "count" : 3
+                }
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                {
+                  "id" : "lmg",
+                  "mount" : [
+                    "Front"
+                  ]
+                }
+              ],
+              "withWeapon" : [
+                {
+                  "id" : "gatling_gun",
+                  "mount" : [
+                    "Front"
+                  ]
+                },
+                {
+                  "id" : "twin_flamethrower",
+                  "mount" : [
+                    "Front"
+                  ]
+                },
+                {
+                  "id" : "twin_plasma_rifle",
+                  "mount" : [
+                    "Front"
+                  ]
+                },
+                {
+                  "id" : "twin_fusion_rifle",
+                  "mount" : [
+                    "Front"
+                  ]
+                }
+              ]
+            }
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            {
+              "id" : "impact",
+              "x" : 1
+            }
+          ]
+        }
+      ]
+    },
+    "minuteman" : {
+      "name" : "Minuteman",
+      "description" : "Local Militia, known for being ready at a minute's notice, hence the name.",
+      "category" : "core",
+      "models" : [
+        {
+          "name" : "Minuteman",
+          "movement" : 6,
+          "courage" : 5,
+          "shoot" : 5,
+          "fight" : 5,
+          "defense" : 5,
+          "reflexes" : 6,
+          "weapons" : [
+            "carbine",
+            "ccw"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "scout"
+          ],
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "carbine"
+              ],
+              "withWeapon" : [
+                "shotgun",
+                "combat_rifle",
+                "smg"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ranger" : {
+      "name" : "US Ranger",
+      "description" : "A United States ranger, bringing justice to the frontier.",
+      "category" : "specialist",
+      "models" : [
+        {
+          "name" : "US Ranger",
+          "movement" : 6,
+          "courage" : 5,
+          "shoot" : 5,
+          "fight" : 5,
+          "defense" : 6,
+          "reflexes" : 6,
+          "weapons" : [
+            "combat_rifle",
+            "ccw"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "combat_rifle"
+              ],
+              "withWeapon" : [
+                "shotgun",
+                "plasma_rifle",
+                "hunting_rifle"
+              ]
+            }
+          ],
+          "rules" : [
+            "fearless",
+            "ambush"
+          ]
+        }
+      ]
+    },
+    "robot_hound" : {
+      "name" : "Robot Hound",
+      "description" : "A mechanical beast, hunting down anyone and anything.",
+      "category" : "core",
+      "models" : [
+        {
+          "name" : "Robot Hound",
+          "movement" : 7,
+          "courage" : 4,
+          "shoot" : 4,
+          "fight" : 5,
+          "defense" : 4,
+          "reflexes" : 5,
+          "weapons" : [
+            {
+              "id" : "heavy_ccw",
+              "count" : 2
+            }
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "scout"
+          ]
+        }
+      ],
+      "keywords" : [
+        "Automaton"
+      ]
+    },
+    "gun_hound" : {
+      "name" : "Gun Hound",
+      "description" : "A mechanical beast, armed with heavy weaponry.",
+      "category" : "heavy",
+      "models" : [
+        {
+          "name" : "Gun Hound",
+          "movement" : 7,
+          "courage" : 4,
+          "shoot" : 5,
+          "fight" : 4,
+          "defense" : 5,
+          "reflexes" : 5,
+          "weapons" : [
+            {
+              "id" : "heavy_ccw",
+              "count" : 2
+            },
+            "lmg"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "lmg"
+              ],
+              "withWeapon" : [
+                "gatling_gun",
+                "rocket_pod",
+                "twin_flamethrower"
+              ]
+            }
+          ]
+        }
+      ],
+      "keywords" : [
+        "Automaton"
+      ]
+    },
+    "deputy_heavy" : {
+      "name" : "US Ranger Heavy",
+      "description" : "A United States ranger, equipped with different weapons.",
+      "category" : "heavy",
+      "models" : [
+        {
+          "name" : "US Ranger Heavy",
+          "movement" : 6,
+          "courage" : 5,
+          "shoot" : 5,
+          "fight" : 6,
+          "defense" : 6,
+          "reflexes" : 6,
+          "weapons" : [
+            "ccw",
+            "flamethrower",
+            "frag_grenades"
+          ],
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "flamethrower"
+              ],
+              "withWeapon" : [
+                "rocket_launcher",
+                "lmg",
+                "grenade_launcher"
+              ]
+            }
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "fearless",
+            "ambush"
+          ]
+        }
+      ]
+    },
+    "sheriff_bike" : {
+      "name" : "Sheriff on Hoverbike",
+      "description" : "A United States marshal, driving a hoverbike to bring justice to the frontier.",
+      "category" : "leader",
+      "models" : [
+        {
+          "name" : "US Marshal on Hoverbike",
+          "movement" : 8,
+          "courage" : 6,
+          "shoot" : 5,
+          "fight" : 6,
+          "defense" : 6,
+          "reflexes" : 6,
+          "weapons" : [
+            "ccw",
+            "combi_rifle",
+            "frag_grenades",
+            {
+              "id" : "lmg",
+              "mount" : [
+                "Front"
+              ]
+            }
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "leader",
+            {
+              "id" : "impact",
+              "x" : 1
+            },
+            {
+              "id" : "wounds",
+              "x" : 2
+            }
+          ],
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "combi_rifle"
+              ],
+              "withWeapon" : [
+                "combi_plasma",
+                "combi_shotgun",
+                "sniper_rifle",
+                "combi_flamethrower",
+                "combi_fusion"
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                {
+                  "id" : "lmg",
+                  "mount" : [
+                    "Front"
+                  ]
+                }
+              ],
+              "withWeapon" : [
+                {
+                  "id" : "gatling_gun",
+                  "mount" : [
+                    "Front"
+                  ]
+                },
+                {
+                  "id" : "twin_flamethrower",
+                  "mount" : [
+                    "Front"
+                  ]
+                },
+                {
+                  "id" : "twin_plasma_rifle",
+                  "mount" : [
+                    "Front"
+                  ]
+                },
+                {
+                  "id" : "twin_fusion_rifle",
+                  "mount" : [
+                    "Front"
+                  ]
+                }
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                "combi_rifle",
+                "ccw"
+              ],
+              "withWeapon" : [
+                [
+                  "revolver",
+                  {
+                    "id" : "heavy_ccw",
+                    "count" : 2
+                  }
+                ]
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                {
+                  "id" : "heavy_ccw",
+                  "count" : 2
+                }
+              ],
+              "withWeapon" : [
+                {
+                  "id" : "energy_sword",
+                  "count" : 2
+                },
+                {
+                  "id" : "energy_fist",
+                  "count" : 2
+                },
+                {
+                  "id" : "energy_hammer",
+                  "count" : 2
+                },
+                {
+                  "id" : "energy_claw",
+                  "count" : 3
+                }
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                "revolver"
+              ],
+              "withWeapon" : [
+                "plasma_pistol",
+                "fusion_pistol",
+                "flamethrower_pistol",
+                {
+                  "id" : "revolver",
+                  "count" : 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "weapons" : {},
+  "rules" : {},
+  "powers" : {},
+  "strategies" : [],
+  "relics" : []
+}

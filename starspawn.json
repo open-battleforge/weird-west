@@ -1,0 +1,296 @@
+{
+  "name" : "Starspawn Syndicate",
+  "id" : "starspawn",
+  "author" : "Xekon#8266",
+  "version" : "0.1",
+  "alliance" : "aliens",
+  "units" : {
+    "spawn" : {
+      "name" : "Spawn",
+      "description" : "",
+      "category" : "core",
+      "models" : [
+        {
+          "name" : "Spawn",
+          "movement" : 6,
+          "courage" : 5,
+          "shoot" : 5,
+          "fight" : 5,
+          "defense" : 5,
+          "reflexes" : 5,
+          "weapons" : [
+            "laser_rifle",
+            "ccw"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "xenoshield"
+          ],
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "laser_rifle",
+                "ccw"
+              ],
+              "withWeapon" : [
+                [
+                  "laser_pistol",
+                  {
+                    "id" : "ccw",
+                    "count" : 2
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "spawn_heavy" : {
+      "name" : "Spawn Heavy",
+      "description" : "",
+      "category" : "heavy",
+      "models" : [
+        {
+          "name" : "Spawn Heavy",
+          "movement" : 6,
+          "courage" : 5,
+          "shoot" : 5,
+          "fight" : 5,
+          "defense" : 5,
+          "reflexes" : 5,
+          "weapons" : [
+            "flamethrower",
+            "ccw"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "xenoshield"
+          ],
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "flamethrower"
+              ],
+              "withWeapon" : [
+                "rocket_launcher",
+                "fusion_rifle"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "drop_turret" : {
+      "name" : "Drop-Turret",
+      "description" : "",
+      "category" : "heavy",
+      "models" : [
+        {
+          "name" : "Drop-Turret",
+          "shoot" : 6,
+          "defense" : 6,
+          "reflexes" : 4,
+          "weapons" : [
+            "heavy_machine_gun"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "insignificant",
+            "ambush"
+          ],
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "heavy_machine_gun"
+              ],
+              "withWeapon" : [
+                "rocket_pod",
+                "plasma_cannon",
+                "fusion_cannon"
+              ]
+            }
+          ],
+          "movement" : 5,
+          "fight" : 0,
+          "courage" : "-"
+        }
+      ]
+    },
+    "spawn_commander" : {
+      "name" : "Spawn Commander",
+      "description" : "",
+      "category" : "leader",
+      "models" : [
+        {
+          "name" : "Spawn Commander",
+          "movement" : 6,
+          "courage" : 6,
+          "shoot" : 5,
+          "fight" : 5,
+          "defense" : 5,
+          "reflexes" : 6,
+          "weapons" : [
+            "energy_ccw",
+            "plasma_grenades",
+            "laser_rifle"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "leader",
+            "xenoshield"
+          ],
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "laser_rifle"
+              ],
+              "withWeapon" : [
+                "combi_plasma",
+                "combi_flamethrower",
+                "combi_fusion",
+                "twin_rifle"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "spawn_engineer" : {
+      "name" : "Spawn Engineer",
+      "description" : "",
+      "category" : "specialist",
+      "models" : [
+        {
+          "name" : "Spawn Engineer",
+          "movement" : 6,
+          "courage" : 5,
+          "shoot" : 5,
+          "fight" : 5,
+          "defense" : 5,
+          "reflexes" : 5,
+          "weapons" : [
+            "plasma_rifle",
+            "heavy_ccw",
+            "plasma_grenades"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "xenoshield",
+            "portal_mastery"
+          ],
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "plasma_rifle"
+              ],
+              "withWeapon" : [
+                "flamethrower",
+                "fusion_rifle"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "spawn_infiltrator" : {
+      "name" : "Spawn Infiltrator",
+      "description" : "",
+      "category" : "specialist",
+      "models" : [
+        {
+          "name" : "Spawn Infiltrator",
+          "movement" : 6,
+          "courage" : 5,
+          "shoot" : 5,
+          "fight" : 5,
+          "defense" : 5,
+          "reflexes" : 5,
+          "weapons" : [
+            "laser_pistol",
+            {
+              "id" : "heavy_ccw",
+              "count" : 2
+            }
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "xenoshield",
+            "ambush",
+            "evasive"
+          ]
+        }
+      ]
+    },
+    "portal" : {
+      "name" : "Portal",
+      "description" : "",
+      "category" : "support",
+      "models" : [
+        {
+          "name" : "Portal",
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "portal",
+            "deployable"
+          ],
+          "courage" : "-",
+          "reflexes" : "-",
+          "fight" : "-",
+          "defense" : "-",
+          "shoot" : "-",
+          "movement" : "-"
+        }
+      ],
+      "keywords" : [
+        "Portal"
+      ]
+    },
+    "shield_generator" : {
+      "name" : "Shield Generator",
+      "description" : "",
+      "category" : "support",
+      "models" : [
+        {
+          "name" : "Shield Generator",
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "shield_generator",
+            "deployable"
+          ],
+          "courage" : "-",
+          "reflexes" : "-",
+          "fight" : "-",
+          "defense" : "-",
+          "shoot" : "-",
+          "movement" : "-"
+        }
+      ],
+      "keywords" : [
+        "Portal"
+      ]
+    }
+  },
+  "weapons" : {},
+  "rules" : {
+    "xenoshield" : {
+      "name" : "Xenoshield",
+      "description" : "This model may ignore the first point of AP from ranged attacks. Weapons with AP 4 or greater ignore this rule.",
+      "points" : [
+        2
+      ]
+    }
+  },
+  "powers" : {},
+  "strategies" : [],
+  "relics" : [],
+  "color" : "#008080"
+}

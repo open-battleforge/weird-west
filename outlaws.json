@@ -1,0 +1,965 @@
+{
+  "name" : "Outlaws",
+  "id" : "outlaws",
+  "author" : "Xekon#8266",
+  "version" : "0.1",
+  "alliance" : "mercenaries",
+  "units" : {
+    "bandit_captain" : {
+      "name" : "Bandit Captain",
+      "description" : "A fortune seeker, leading a small gang of outlaws.",
+      "category" : "leader",
+      "models" : [
+        {
+          "name" : "Bandit Boss",
+          "movement" : 6,
+          "courage" : 6,
+          "shoot" : 5,
+          "fight" : 6,
+          "defense" : 5,
+          "reflexes" : 5,
+          "weapons" : [
+            "combat_rifle",
+            "frag_grenades",
+            "ccw"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "leader",
+            {
+              "id" : "wounds",
+              "x" : 2
+            }
+          ],
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "combat_rifle"
+              ],
+              "withWeapon" : [
+                "plasma_rifle",
+                "shotgun",
+                "sniper_rifle",
+                "flamethrower",
+                "fusion_rifle",
+                "twin_combat_rifle"
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                "combat_rifle",
+                "ccw"
+              ],
+              "withWeapon" : [
+                [
+                  "revolver",
+                  {
+                    "id" : "ccw",
+                    "count" : 2
+                  }
+                ]
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                {
+                  "id" : "ccw",
+                  "count" : 2
+                }
+              ],
+              "withWeapon" : [
+                {
+                  "id" : "energy_sword",
+                  "count" : 2
+                },
+                {
+                  "id" : "heavy_ccw",
+                  "count" : 2
+                },
+                {
+                  "id" : "energy_fist",
+                  "count" : 2
+                },
+                {
+                  "id" : "energy_hammer",
+                  "count" : 2
+                },
+                {
+                  "id" : "energy_claw",
+                  "count" : 3
+                }
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                "revolver"
+              ],
+              "withWeapon" : [
+                "plasma_pistol",
+                "fusion_pistol",
+                "flamethrower_pistol",
+                {
+                  "id" : "revolver",
+                  "count" : 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "captain_bike" : {
+      "name" : "Captain on Hoverbike",
+      "description" : "A fortune seeker, leading a small gang of outlaws.",
+      "category" : "leader",
+      "models" : [
+        {
+          "name" : "Captain on Hoverbike",
+          "movement" : 8,
+          "courage" : 6,
+          "shoot" : 5,
+          "fight" : 6,
+          "defense" : 5,
+          "reflexes" : 6,
+          "weapons" : [
+            "combat_rifle",
+            "ccw",
+            "frag_grenades",
+            {
+              "id" : "lmg",
+              "mount" : [
+                "Front"
+              ]
+            }
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            {
+              "id" : "leader_x",
+              "x" : "Infantry, Biker"
+            },
+            {
+              "id" : "impact",
+              "x" : 1
+            },
+            {
+              "id" : "wounds",
+              "x" : 2
+            }
+          ],
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "combat_rifle"
+              ],
+              "withWeapon" : [
+                "plasma_rifle",
+                "shotgun",
+                "sniper_rifle",
+                "flamethrower",
+                "fusion_rifle",
+                "twin_combat_rifle"
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                {
+                  "id" : "lmg",
+                  "mount" : [
+                    "Front"
+                  ]
+                }
+              ],
+              "withWeapon" : [
+                {
+                  "id" : "twin_fusion_rifle",
+                  "mount" : [
+                    "Front"
+                  ]
+                },
+                {
+                  "id" : "twin_flamethrower",
+                  "mount" : [
+                    "Front"
+                  ]
+                },
+                {
+                  "id" : "twin_plasma_rifle",
+                  "mount" : [
+                    "Front"
+                  ]
+                },
+                {
+                  "id" : "gatling_gun",
+                  "mount" : [
+                    "Front"
+                  ]
+                }
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                "combat_rifle",
+                "ccw"
+              ],
+              "withWeapon" : [
+                [
+                  "revolver",
+                  {
+                    "id" : "ccw",
+                    "count" : 2
+                  }
+                ]
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                {
+                  "id" : "ccw",
+                  "count" : 2
+                }
+              ],
+              "withWeapon" : [
+                {
+                  "id" : "energy_sword",
+                  "count" : 2
+                },
+                {
+                  "id" : "heavy_ccw",
+                  "count" : 2
+                },
+                {
+                  "id" : "energy_fist",
+                  "count" : 2
+                },
+                {
+                  "id" : "energy_hammer",
+                  "count" : 2
+                }
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                "revolver"
+              ],
+              "withWeapon" : [
+                "plasma_pistol",
+                "fusion_pistol",
+                "flamethrower_pistol",
+                {
+                  "id" : "revolver",
+                  "count" : 2
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "keywords" : [
+        "Biker"
+      ]
+    },
+    "boss_bike" : {
+      "name" : "Boss on Hoverbike",
+      "description" : "A fortune seeker, leading a small gang of outlaws.",
+      "category" : "leader",
+      "models" : [
+        {
+          "name" : "Boss on Hoverbike",
+          "movement" : 8,
+          "courage" : 7,
+          "shoot" : 5,
+          "fight" : 6,
+          "defense" : 6,
+          "reflexes" : 6,
+          "weapons" : [
+            "combat_rifle",
+            "ccw",
+            "frag_grenades",
+            {
+              "id" : "lmg",
+              "mount" : [
+                "Front"
+              ]
+            }
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            {
+              "id" : "leader_x",
+              "x" : "Infantry, Biker"
+            },
+            {
+              "id" : "impact",
+              "x" : 1
+            },
+            {
+              "id" : "wounds",
+              "x" : 3
+            },
+            {
+              "id" : "ranged_tactics",
+              "x" : 1
+            }
+          ],
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "combat_rifle"
+              ],
+              "withWeapon" : [
+                "plasma_rifle",
+                "shotgun",
+                "sniper_rifle",
+                "flamethrower",
+                "fusion_rifle",
+                "twin_combat_rifle"
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                {
+                  "id" : "lmg",
+                  "mount" : [
+                    "Front"
+                  ]
+                }
+              ],
+              "withWeapon" : [
+                {
+                  "id" : "twin_fusion_rifle",
+                  "mount" : [
+                    "Front"
+                  ]
+                },
+                {
+                  "id" : "twin_flamethrower",
+                  "mount" : [
+                    "Front"
+                  ]
+                },
+                {
+                  "id" : "twin_plasma_rifle",
+                  "mount" : [
+                    "Front"
+                  ]
+                },
+                {
+                  "id" : "gatling_gun",
+                  "mount" : [
+                    "Front"
+                  ]
+                }
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                "combat_rifle",
+                "ccw"
+              ],
+              "withWeapon" : [
+                [
+                  "revolver",
+                  {
+                    "id" : "ccw",
+                    "count" : 2
+                  }
+                ]
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                {
+                  "id" : "ccw",
+                  "count" : 2
+                }
+              ],
+              "withWeapon" : [
+                {
+                  "id" : "energy_sword",
+                  "count" : 2
+                },
+                {
+                  "id" : "heavy_ccw",
+                  "count" : 2
+                },
+                {
+                  "id" : "energy_fist",
+                  "count" : 2
+                },
+                {
+                  "id" : "energy_hammer",
+                  "count" : 2
+                }
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                "revolver"
+              ],
+              "withWeapon" : [
+                "plasma_pistol",
+                "fusion_pistol",
+                "flamethrower_pistol",
+                {
+                  "id" : "revolver",
+                  "count" : 2
+                }
+              ]
+            },
+            {
+              "replaceRule" : [
+                {
+                  "id" : "ranged_tactics",
+                  "x" : 1
+                }
+              ],
+              "withRule" : [
+                {
+                  "id" : "melee_tactics",
+                  "x" : 1
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "keywords" : [
+        "Biker"
+      ]
+    },
+    "bandit_boss" : {
+      "name" : "Bandit Boss",
+      "description" : "A fortune seeker, leading a small gang of outlaws.",
+      "category" : "leader",
+      "models" : [
+        {
+          "name" : "Bandit Boss",
+          "movement" : 6,
+          "courage" : 7,
+          "shoot" : 5,
+          "fight" : 6,
+          "defense" : 6,
+          "reflexes" : 6,
+          "weapons" : [
+            "combat_rifle",
+            "frag_grenades",
+            "ccw"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "leader",
+            {
+              "id" : "wounds",
+              "x" : 3
+            },
+            {
+              "id" : "ranged_tactics",
+              "x" : 1
+            }
+          ],
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "combat_rifle"
+              ],
+              "withWeapon" : [
+                "plasma_rifle",
+                "shotgun",
+                "sniper_rifle",
+                "flamethrower",
+                "fusion_rifle",
+                "twin_combat_rifle"
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                "combat_rifle",
+                "ccw"
+              ],
+              "withWeapon" : [
+                [
+                  "revolver",
+                  {
+                    "id" : "ccw",
+                    "count" : 2
+                  }
+                ]
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                {
+                  "id" : "ccw",
+                  "count" : 2
+                }
+              ],
+              "withWeapon" : [
+                {
+                  "id" : "energy_sword",
+                  "count" : 2
+                },
+                {
+                  "id" : "heavy_ccw",
+                  "count" : 2
+                },
+                {
+                  "id" : "energy_fist",
+                  "count" : 2
+                },
+                {
+                  "id" : "energy_hammer",
+                  "count" : 2
+                },
+                {
+                  "id" : "energy_claw",
+                  "count" : 3
+                }
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                "revolver"
+              ],
+              "withWeapon" : [
+                "plasma_pistol",
+                "fusion_pistol",
+                "flamethrower_pistol",
+                {
+                  "id" : "revolver",
+                  "count" : 2
+                }
+              ]
+            },
+            {
+              "replaceRule" : [
+                {
+                  "id" : "ranged_tactics",
+                  "x" : 1
+                }
+              ],
+              "withRule" : [
+                {
+                  "id" : "melee_tactics",
+                  "x" : 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "bandit_raider" : {
+      "name" : "Bandit Raider",
+      "description" : "",
+      "category" : "core",
+      "models" : [
+        {
+          "name" : "Bandit Raider",
+          "movement" : 6,
+          "courage" : 5,
+          "shoot" : 5,
+          "fight" : 6,
+          "defense" : 5,
+          "reflexes" : 5,
+          "weapons" : [
+            "combat_rifle",
+            "ccw",
+            "frag_grenades"
+          ],
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "combat_rifle"
+              ],
+              "withWeapon" : [
+                "shotgun",
+                "twin_combat_rifle"
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                "combat_rifle",
+                "ccw"
+              ],
+              "withWeapon" : [
+                [
+                  "pistol",
+                  {
+                    "id" : "ccw",
+                    "count" : 2
+                  }
+                ],
+                {
+                  "id" : "energy_hammer",
+                  "count" : 2
+                }
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                "pistol"
+              ],
+              "withWeapon" : [
+                "smg",
+                "shotgun_pistol",
+                "plasma_pistol",
+                "flamethrower_pistol"
+              ]
+            }
+          ],
+          "min" : 1,
+          "max" : 1
+        }
+      ]
+    },
+    "bandit_thug" : {
+      "name" : "Bandit Thug",
+      "description" : "",
+      "category" : "core",
+      "models" : [
+        {
+          "name" : "Bandit Thug",
+          "movement" : 6,
+          "courage" : 5,
+          "shoot" : 5,
+          "fight" : 5,
+          "defense" : 4,
+          "reflexes" : 5,
+          "weapons" : [
+            "pistol",
+            {
+              "id" : "ccw",
+              "count" : 2
+            }
+          ],
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "pistol"
+              ],
+              "withWeapon" : [
+                "shotgun_pistol",
+                "smg"
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                "pistol",
+                {
+                  "id" : "ccw",
+                  "count" : 2
+                }
+              ],
+              "withWeapon" : [
+                {
+                  "id" : "energy_hammer",
+                  "count" : 2
+                }
+              ]
+            }
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "scout"
+          ]
+        }
+      ]
+    },
+    "bandit_sniper" : {
+      "name" : "Bandit Sharpshooter",
+      "description" : "",
+      "category" : "specialist",
+      "models" : [
+        {
+          "name" : "Bandit Sharpshooter",
+          "movement" : 6,
+          "courage" : 5,
+          "shoot" : 5,
+          "fight" : 5,
+          "defense" : 5,
+          "reflexes" : 5,
+          "weapons" : [
+            "ccw",
+            "sniper_rifle",
+            "smoke_grenades"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "sniper_rifle"
+              ],
+              "withWeapon" : [
+                "plasma_sniper_rifle"
+              ]
+            }
+          ],
+          "rules" : [
+            "evasive"
+          ]
+        }
+      ]
+    },
+    "robot_hound" : {
+      "name" : "Robot Hound",
+      "description" : "A mechanical beast, hunting down anyone and anything.",
+      "category" : "core",
+      "models" : [
+        {
+          "name" : "Robot Hound",
+          "movement" : 7,
+          "courage" : 4,
+          "shoot" : 4,
+          "fight" : 5,
+          "defense" : 4,
+          "reflexes" : 5,
+          "weapons" : [
+            {
+              "id" : "heavy_ccw",
+              "count" : 2
+            }
+          ],
+          "min" : 1,
+          "max" : 1,
+          "rules" : [
+            "scout"
+          ]
+        }
+      ],
+      "keywords" : [
+        "Automaton"
+      ]
+    },
+    "gun_hound" : {
+      "name" : "Gun Hound",
+      "description" : "A mechanical beast, armed with heavy weaponry.",
+      "category" : "heavy",
+      "models" : [
+        {
+          "name" : "Gun Hound",
+          "movement" : 7,
+          "courage" : 4,
+          "shoot" : 5,
+          "fight" : 4,
+          "defense" : 5,
+          "reflexes" : 5,
+          "weapons" : [
+            {
+              "id" : "heavy_ccw",
+              "count" : 2
+            },
+            "lmg"
+          ],
+          "min" : 1,
+          "max" : 1,
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "lmg"
+              ],
+              "withWeapon" : [
+                "gatling_gun",
+                "rocket_pod",
+                "twin_flamethrower"
+              ]
+            }
+          ]
+        }
+      ],
+      "keywords" : [
+        "Automaton"
+      ]
+    },
+    "bandit_bike" : {
+      "name" : "Bandit on Hoverbike",
+      "description" : "",
+      "category" : "strike",
+      "keywords" : [
+        "Biker"
+      ],
+      "models" : [
+        {
+          "name" : "Bandit on Hoverbike",
+          "movement" : 8,
+          "courage" : 5,
+          "shoot" : 5,
+          "fight" : 5,
+          "defense" : 5,
+          "reflexes" : 5,
+          "weapons" : [
+            "ccw",
+            "combat_rifle",
+            "frag_grenades",
+            {
+              "id" : "lmg",
+              "mount" : [
+                "Front"
+              ]
+            }
+          ],
+          "rules" : [
+            {
+              "id" : "impact",
+              "x" : 1
+            }
+          ],
+          "min" : 1,
+          "max" : 1,
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "combat_rifle"
+              ],
+              "withWeapon" : [
+                "plasma_rifle",
+                "shotgun",
+                "flamethrower",
+                "twin_combat_rifle"
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                {
+                  "id" : "lmg",
+                  "mount" : [
+                    "Front"
+                  ]
+                }
+              ],
+              "withWeapon" : [
+                {
+                  "id" : "twin_fusion_rifle",
+                  "mount" : [
+                    "Front"
+                  ]
+                },
+                {
+                  "id" : "twin_flamethrower",
+                  "mount" : [
+                    "Front"
+                  ]
+                },
+                {
+                  "id" : "twin_plasma_rifle",
+                  "mount" : [
+                    "Front"
+                  ]
+                },
+                {
+                  "id" : "gatling_gun",
+                  "mount" : [
+                    "Front"
+                  ]
+                }
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                "combat_rifle",
+                "ccw"
+              ],
+              "withWeapon" : [
+                {
+                  "id" : "energy_hammer",
+                  "count" : 2
+                },
+                [
+                  "pistol",
+                  {
+                    "id" : "ccw",
+                    "count" : 2
+                  }
+                ]
+              ]
+            },
+            {
+              "replaceWeapon" : [
+                "pistol"
+              ],
+              "withWeapon" : [
+                "plasma_pistol",
+                "shotgun_pistol",
+                "flamethrower_pistol"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "bandit_heavy" : {
+      "name" : "Bandit Heavy",
+      "description" : "",
+      "category" : "heavy",
+      "models" : [
+        {
+          "name" : "Bandit Heavy",
+          "movement" : 6,
+          "courage" : 5,
+          "shoot" : 6,
+          "fight" : 5,
+          "defense" : 6,
+          "reflexes" : 5,
+          "weapons" : [
+            "ccw",
+            "flamethrower",
+            "frag_grenades"
+          ],
+          "options" : [
+            {
+              "replaceWeapon" : [
+                "flamethrower"
+              ],
+              "withWeapon" : [
+                "rocket_launcher",
+                "lmg",
+                "grenade_launcher"
+              ]
+            }
+          ],
+          "min" : 1,
+          "max" : 1
+        }
+      ]
+    }
+  },
+  "weapons" : {},
+  "rules" : {
+    "melee_tactics" : {
+      "name" : "Melee Tactics",
+      "inputs" : [
+        "x"
+      ],
+      "description" : "When this unit is activated, choose up to X friendly _Infantry_ units within 6\". This unit and those units may re-roll failed Strength tests of 9+ until the end of the round.",
+      "points" : [
+        "rule.x",
+        {
+          "multiply" : 10
+        }
+      ]
+    },
+    "ranged_tactics" : {
+      "name" : "Ranged Tactics",
+      "inputs" : [
+        "x"
+      ],
+      "description" : "When this unit is activated, choose up to X friendly _Infantry_ units within 6\". This unit and those units may re-roll failed Accuracy tests of 9+ until the end of the round.",
+      "points" : [
+        "rule.x",
+        {
+          "multiply" : 10
+        }
+      ]
+    }
+  },
+  "powers" : {},
+  "strategies" : [],
+  "relics" : [],
+  "color" : "#954535"
+}

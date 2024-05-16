@@ -1,0 +1,1207 @@
+{
+  "reportUrl" : "https://github.com/wargame-engine/weird_west/issues",
+  "name" : "Weird West Skirmish (Beta)",
+  "id" : "weird_west",
+  "version" : "0.1",
+  "gameType" : "skirmish",
+  "alliances" : {
+    "lawmen" : {
+      "name" : "Lawmen"
+    },
+    "union" : {
+      "name" : "U.S. Union"
+    },
+    "institute" : {
+      "name" : "The Institute"
+    },
+    "natives" : {
+      "name" : "Native Nation"
+    },
+    "aliens" : {
+      "name" : "Starbound Alliance"
+    },
+    "secret_society" : {
+      "name" : "Secret Society"
+    },
+    "monsters" : {
+      "name" : "Creatures of the Night"
+    },
+    "mercenaries" : {
+      "name" : "Mercenaries"
+    }
+  },
+  "factions" : {
+    "us_marshals" : {
+      "name" : "United States Marshals",
+      "id" : "us_marshals",
+      "url" : "us_marshals.json",
+      "color" : "#0d407f",
+      "version" : "0.1",
+      "alliance" : "lawmen",
+      "description" : ""
+    },
+    "outlaws" : {
+      "name" : "Outlaws",
+      "id" : "outlaws",
+      "url" : "outlaws.json",
+      "color" : "#954535",
+      "version" : "0.1",
+      "alliance" : "mercenaries",
+      "description" : ""
+    },
+    "celestials" : {
+      "name" : "Celestials",
+      "id" : "celestials",
+      "url" : "celestials.json",
+      "color" : "#D6B85A",
+      "version" : "0.1",
+      "alliance" : "aliens",
+      "description" : ""
+    },
+    "starspawn" : {
+      "name" : "Starspawn Syndicate",
+      "id" : "starspawn",
+      "url" : "starspawn.json",
+      "color" : "#008080",
+      "version" : "0.1",
+      "alliance" : "aliens",
+      "description" : ""
+    },
+    "confederate_rebellion" : {
+      "name" : "Confederate Rebellion",
+      "id" : "confederate_rebellion",
+      "url" : "confederate_rebellion.json",
+      "color" : "#B53737",
+      "version" : "0.1",
+      "alliance" : "mercenaries",
+      "description" : ""
+    }
+  },
+  "categories" : {
+    "leader" : {
+      "name" : "Leader"
+    },
+    "core" : {
+      "name" : "Core"
+    },
+    "specialist" : {
+      "name" : "Specialist"
+    },
+    "strike" : {
+      "name" : "Strike"
+    },
+    "heavy" : {
+      "name" : "Heavy"
+    },
+    "support" : {
+      "name" : "Support"
+    },
+    "fortification" : {
+      "name" : "Fortification"
+    }
+  },
+  "organizations" : {
+    "skirmish" : {
+      "name" : "Generalist",
+      "cost" : 0,
+      "description" : "A well-rounded force for taking on any mission.",
+      "categories" : {
+        "leader" : {
+          "min" : 1,
+          "max" : 2
+        },
+        "core" : {
+          "min" : 2,
+          "max" : 8
+        },
+        "specialist" : {
+          "max" : 5
+        },
+        "strike" : {
+          "max" : 5
+        },
+        "heavy" : {
+          "max" : 3
+        },
+        "fortification" : {
+          "max" : 4
+        }
+      }
+    },
+    "strike" : {
+      "name" : "Strike",
+      "cost" : 1,
+      "description" : "A strike force for outflanking or shock assaulting.",
+      "categories" : {
+        "leader" : {
+          "min" : 1,
+          "max" : 2
+        },
+        "core" : {
+          "max" : 5
+        },
+        "specialist" : {
+          "max" : 5
+        },
+        "strike" : {
+          "min" : 2,
+          "max" : 8
+        },
+        "heavy" : {
+          "max" : 3
+        },
+        "fortification" : {
+          "max" : 4
+        }
+      }
+    },
+    "specialist" : {
+      "name" : "Specialist",
+      "cost" : 1,
+      "description" : "An elite force to deal with specific targets.",
+      "categories" : {
+        "leader" : {
+          "min" : 1,
+          "max" : 2
+        },
+        "core" : {
+          "max" : 5
+        },
+        "specialist" : {
+          "min" : 2,
+          "max" : 8
+        },
+        "strike" : {
+          "max" : 5
+        },
+        "heavy" : {
+          "max" : 3
+        },
+        "fortification" : {
+          "max" : 4
+        }
+      }
+    },
+    "heavy" : {
+      "name" : "Heavy",
+      "cost" : 1,
+      "description" : "A heavy force to pack a punch on the field.",
+      "categories" : {
+        "leader" : {
+          "min" : 1,
+          "max" : 2
+        },
+        "core" : {
+          "max" : 5
+        },
+        "specialist" : {
+          "max" : 5
+        },
+        "strike" : {
+          "max" : 5
+        },
+        "heavy" : {
+          "min" : 2,
+          "max" : 5
+        },
+        "fortification" : {
+          "max" : 4
+        }
+      }
+    },
+    "support" : {
+      "name" : "Support",
+      "cost" : 1,
+      "description" : "A small supporting force.",
+      "categories" : {
+        "leader" : {
+          "max" : 1
+        },
+        "core" : {
+          "max" : 2
+        },
+        "specialist" : {
+          "max" : 2
+        },
+        "strike" : {
+          "max" : 2
+        },
+        "heavy" : {
+          "max" : 1
+        },
+        "fortification" : {
+          "max" : 4
+        }
+      }
+    }
+  },
+  "relics" : {
+    "inspired" : {
+      "name" : "Inspired",
+      "rule" : "legend_courage",
+      "description" : "Upgrade one Leader model with Inspired.",
+      "flavor" : "This model inspires the best in those who serve them.",
+      "points" : 10
+    }
+  },
+  "weapons" : {
+    "ccw" : {
+      "name" : "CCW",
+      "attacks" : 1,
+      "short" : "Melee"
+    },
+    "heavy_ccw" : {
+      "name" : "Heavy CCW",
+      "attacks" : 1,
+      "ap" : 1,
+      "short" : "Melee"
+    },
+    "throwing_axe" : {
+      "name" : "Handaxe",
+      "profiles" : [
+        {
+          "name" : "Melee",
+          "attacks" : 1,
+          "short" : "Melee"
+        },
+        {
+          "name" : "Thrown",
+          "attacks" : 1,
+          "short" : 9,
+          "rules" : [
+            "assault"
+          ]
+        }
+      ]
+    },
+    "tomahawk" : {
+      "name" : "Tomahwak",
+      "profiles" : [
+        {
+          "name" : "Melee",
+          "attacks" : 1,
+          "ap" : 1,
+          "short" : "Melee"
+        },
+        {
+          "name" : "Thrown",
+          "attacks" : 1,
+          "ap" : 1,
+          "short" : 9,
+          "rules" : [
+            "assault"
+          ]
+        }
+      ]
+    },
+    "pistol" : {
+      "name" : "Pistol",
+      "attacks" : 1,
+      "short" : 6,
+      "rules" : [
+        "pistol"
+      ]
+    },
+    "heavy_pistol" : {
+      "name" : "Heavy Pistol",
+      "ap" : 1,
+      "attacks" : 1,
+      "short" : 6,
+      "rules" : [
+        "pistol"
+      ]
+    },
+    "shotgun" : {
+      "name" : "Shotgun",
+      "attacks" : 1,
+      "short" : 6,
+      "medium" : 12,
+      "rules" : [
+        "brutal",
+        "assault"
+      ]
+    },
+    "heavy_shotgun" : {
+      "name" : "Heavy Shotgun",
+      "attacks" : 1,
+      "ap" : 2,
+      "short" : 6,
+      "medium" : 12,
+      "rules" : [
+        "brutal",
+        "assault"
+      ]
+    },
+    "double_barrel_shotgun" : {
+      "name" : "Double Barrel Shotgun",
+      "attacks" : 2,
+      "short" : 6,
+      "medium" : 12,
+      "rules" : [
+        "brutal",
+        "assault"
+      ]
+    },
+    "plasma_pistol" : {
+      "name" : "Plasma Pistol",
+      "attacks" : 1,
+      "ap" : 2,
+      "short" : 6,
+      "rules" : [
+        "pistol",
+        "overcharge"
+      ]
+    },
+    "plasma_rifle" : {
+      "name" : "Plasma Rifle",
+      "attacks" : 1,
+      "ap" : 2,
+      "short" : 12,
+      "medium" : 24,
+      "rules" : [
+        "overcharge",
+        "rapid_fire"
+      ]
+    },
+    "twin_plasma_rifle" : {
+      "name" : "Twin Plasma Rifle",
+      "attacks" : 2,
+      "ap" : 2,
+      "short" : 12,
+      "medium" : 24,
+      "rules" : [
+        "overcharge",
+        "rapid_fire"
+      ]
+    },
+    "plasma_carbine" : {
+      "name" : "Plasma Carbine",
+      "attacks" : 1,
+      "ap" : 2,
+      "short" : 9,
+      "medium" : 18,
+      "rules" : [
+        "overcharge",
+        "assault"
+      ]
+    },
+    "twin_plasma_carbine" : {
+      "name" : "Twin Plasma Carbine",
+      "attacks" : 2,
+      "ap" : 2,
+      "short" : 9,
+      "medium" : 18,
+      "rules" : [
+        "overcharge",
+        "assault"
+      ]
+    },
+    "plasma_shotgun" : {
+      "name" : "Plasma Shotgun",
+      "attacks" : 1,
+      "ap" : 2,
+      "short" : 6,
+      "medium" : 12,
+      "rules" : [
+        "brutal",
+        "assault",
+        "overcharge"
+      ]
+    },
+    "plasma_cannon" : {
+      "name" : "Plasma Cannon",
+      "attacks" : 1,
+      "ap" : 2,
+      "short" : 18,
+      "medium" : 36,
+      "rules" : [
+        "overcharge",
+        {
+          "id" : "blast",
+          "x" : 3
+        }
+      ]
+    },
+    "combat_rifle" : {
+      "name" : "Combat Rifle",
+      "attacks" : 1,
+      "short" : 12,
+      "medium" : 24,
+      "rules" : [
+        "rapid_fire"
+      ]
+    },
+    "twin_combat_rifle" : {
+      "name" : "Twin Combat Rifle",
+      "attacks" : 2,
+      "short" : 12,
+      "medium" : 24,
+      "rules" : [
+        "rapid_fire"
+      ]
+    },
+    "heavy_combat_rifle" : {
+      "name" : "Heavy Combat Rifle",
+      "ap" : 1,
+      "attacks" : 1,
+      "medium" : 24,
+      "short" : 12,
+      "rules" : [
+        "rapid_fire"
+      ]
+    },
+    "twin_heavy_combat_rifle" : {
+      "name" : "Twin Heavy Combat Rifle",
+      "ap" : 1,
+      "attacks" : 2,
+      "medium" : 24,
+      "short" : 12,
+      "rules" : [
+        "rapid_fire"
+      ]
+    },
+    "hunting_rifle" : {
+      "name" : "Hunting Rifle",
+      "attacks" : 1,
+      "ap" : 1,
+      "short" : 15,
+      "medium" : 30,
+      "rules" : [
+        "sniper"
+      ]
+    },
+    "carbine" : {
+      "name" : "Carbine",
+      "attacks" : 1,
+      "short" : 9,
+      "medium" : 18,
+      "rules" : [
+        "assault"
+      ]
+    },
+    "twin_carbine" : {
+      "name" : "Twin Carbine",
+      "attacks" : 2,
+      "short" : 9,
+      "medium" : 18,
+      "rules" : [
+        "assault"
+      ]
+    },
+    "heavy_carbine" : {
+      "name" : "Heavy Carbine",
+      "attacks" : 1,
+      "ap" : 1,
+      "short" : 9,
+      "medium" : 18,
+      "rules" : [
+        "assault"
+      ]
+    },
+    "twin_heavy_carbine" : {
+      "name" : "Twin Heavy Carbine",
+      "attacks" : 2,
+      "ap" : 1,
+      "short" : 9,
+      "medium" : 18,
+      "rules" : [
+        "assault"
+      ]
+    },
+    "gatling_gun" : {
+      "name" : "Gatling Gun",
+      "attacks" : 3,
+      "ap" : 2,
+      "short" : 18,
+      "medium" : 36
+    },
+    "twin_gatling_gun" : {
+      "name" : "Twin Gatling Gun",
+      "attacks" : 6,
+      "ap" : 2,
+      "short" : 18,
+      "medium" : 36
+    },
+    "lmg" : {
+      "name" : "Light Machinegun",
+      "attacks" : 3,
+      "short" : 18,
+      "medium" : 36
+    },
+    "twin_lmg" : {
+      "name" : "Twin Light Machinegun",
+      "attacks" : 6,
+      "short" : 18,
+      "medium" : 36
+    },
+    "rocket_launcher" : {
+      "name" : "Rocket Launcher",
+      "attacks" : 1,
+      "ap" : 1,
+      "short" : 12,
+      "medium" : 24,
+      "rules" : [
+        {
+          "id" : "blast",
+          "x" : 3
+        }
+      ]
+    },
+    "flamethrower_pistol" : {
+      "name" : "Flamethrower Pistol",
+      "attacks" : 3,
+      "short" : 6,
+      "rules" : [
+        "flame",
+        "pistol"
+      ]
+    },
+    "flamethrower" : {
+      "name" : "Flamethrower",
+      "attacks" : 3,
+      "ap" : 1,
+      "short" : 6,
+      "medium" : 12,
+      "rules" : [
+        "flame"
+      ]
+    },
+    "energy_sword" : {
+      "name" : "Energy Sword",
+      "attacks" : 1,
+      "ap" : 2,
+      "short" : "Melee"
+    },
+    "energy_hammer" : {
+      "name" : "Energy Hammer",
+      "attacks" : 1,
+      "ap" : 4,
+      "short" : "Melee",
+      "rules" : [
+        "cumbersome"
+      ]
+    },
+    "heavy_sawblade" : {
+      "name" : "Heavy Sawblade",
+      "attacks" : 4,
+      "ap" : 1,
+      "short" : "Melee",
+      "rules" : [
+        "cumbersome"
+      ]
+    },
+    "energy_claw" : {
+      "name" : "Energy Claw",
+      "attacks" : 1,
+      "ap" : 1,
+      "short" : "Melee",
+      "rules" : [
+        "rending"
+      ]
+    },
+    "energy_fist" : {
+      "name" : "Energy Fist",
+      "attacks" : 1,
+      "ap" : 3,
+      "short" : "Melee",
+      "rules" : [
+        "cumbersome"
+      ]
+    },
+    "drill" : {
+      "name" : "Drill",
+      "attacks" : 1,
+      "ap" : 1,
+      "short" : "Melee",
+      "rules" : [
+        "lethal"
+      ]
+    },
+    "heavy_drill" : {
+      "name" : "Heavy Drill",
+      "attacks" : 1,
+      "ap" : 3,
+      "short" : "Melee",
+      "rules" : [
+        "lethal"
+      ]
+    },
+    "piercing_claws" : {
+      "name" : "Piercing Claws",
+      "attacks" : 1,
+      "short" : "Melee",
+      "rules" : [
+        "rending"
+      ]
+    },
+    "grenade_launcher" : {
+      "name" : "Grenade Launcher",
+      "profiles" : [
+        {
+          "name" : "Frag",
+          "attacks" : 1,
+          "ap" : 1,
+          "short" : 6,
+          "medium" : 12,
+          "rules" : [
+            {
+              "id" : "blast",
+              "x" : 3
+            },
+            "indirect",
+            "scatter"
+          ]
+        },
+        {
+          "name" : "Smoke",
+          "attacks" : 1,
+          "short" : 9,
+          "rules" : [
+            "indirect",
+            "scatter",
+            "smoke"
+          ]
+        }
+      ]
+    },
+    "lasso" : {
+      "name" : "Lasso",
+      "attacks" : 1,
+      "short" : 6,
+      "rules" : [
+        "entangle"
+      ]
+    },
+    "rocket_pod" : {
+      "name" : "Rocket Pod",
+      "attacks" : 1,
+      "ap" : 2,
+      "short" : 18,
+      "medium" : 36,
+      "rules" : [
+        {
+          "id" : "blast",
+          "x" : 3
+        }
+      ]
+    },
+    "plasma_grenades" : {
+      "name" : "Plasma Grenades",
+      "attacks" : 1,
+      "ap" : 2,
+      "short" : 6,
+      "rules" : [
+        "grenade",
+        "overcharge",
+        {
+          "id" : "blast",
+          "x" : 3
+        },
+        "indirect"
+      ]
+    },
+    "frag_grenades" : {
+      "name" : "Frag Grenades",
+      "attacks" : 1,
+      "short" : 6,
+      "ap" : 1,
+      "rules" : [
+        "grenade",
+        {
+          "id" : "blast",
+          "x" : 3
+        },
+        "indirect"
+      ]
+    },
+    "smoke_grenades" : {
+      "name" : "Smoke Grenades",
+      "attacks" : 1,
+      "short" : 6,
+      "rules" : [
+        "grenade",
+        "smoke",
+        "indirect"
+      ]
+    },
+    "flashbang_grenades" : {
+      "name" : "Flashbang Grenades",
+      "attacks" : 1,
+      "short" : 6,
+      "rules" : [
+        "grenade",
+        "indirect",
+        "stun",
+        {
+          "id" : "blast",
+          "x" : 3
+        }
+      ]
+    },
+    "sniper_rifle" : {
+      "name" : "Sniper Rifle",
+      "attacks" : 1,
+      "ap" : 2,
+      "short" : 18,
+      "medium" : 36,
+      "rules" : [
+        "sniper"
+      ]
+    },
+    "plasma_sniper_rifle" : {
+      "name" : "Plasma Sniper Rifle",
+      "attacks" : 1,
+      "ap" : 3,
+      "short" : 18,
+      "medium" : 36,
+      "rules" : [
+        "sniper",
+        "overcharge"
+      ]
+    },
+    "web_pistol" : {
+      "name" : "Web Pistol",
+      "attacks" : 1,
+      "short" : 6,
+      "rules" : [
+        "pistol",
+        "rending",
+        "entangle"
+      ]
+    },
+    "revolver" : {
+      "name" : "Revolver",
+      "attacks" : 1,
+      "short" : 6,
+      "rules" : [
+        "pistol",
+        "rapid_fire"
+      ]
+    },
+    "combi_plasma" : {
+      "name" : "Combi-Plasma Rifle",
+      "profiles" : [
+        {
+          "name" : "Plasma",
+          "attacks" : 1,
+          "ap" : 2,
+          "short" : 12,
+          "medium" : 24,
+          "rules" : [
+            "overcharge",
+            "rapid_fire"
+          ]
+        },
+        {
+          "name" : "Rifle",
+          "attacks" : 1,
+          "short" : 12,
+          "medium" : 24,
+          "rules" : [
+            "rapid_fire"
+          ]
+        }
+      ]
+    },
+    "combi_flamethrower" : {
+      "name" : "Combi-Flamethrower",
+      "profiles" : [
+        {
+          "name" : "Flamethrower",
+          "attacks" : 3,
+          "ap" : 1,
+          "short" : 6,
+          "medium" : 12,
+          "rules" : [
+            "flame"
+          ]
+        },
+        {
+          "name" : "Rifle",
+          "attacks" : 1,
+          "short" : 12,
+          "medium" : 24,
+          "rules" : [
+            "rapid_fire"
+          ]
+        }
+      ]
+    },
+    "combi_grenade" : {
+      "name" : "Combi-Grenade Launcher",
+      "profiles" : [
+        {
+          "name" : "Underslung Grenade Launcher",
+          "attacks" : 1,
+          "ap" : 1,
+          "short" : 12,
+          "medium" : 24,
+          "rules" : [
+            {
+              "id" : "blast",
+              "x" : 3
+            }
+          ]
+        },
+        {
+          "name" : "Rifle",
+          "attacks" : 1,
+          "short" : 12,
+          "medium" : 24,
+          "rules" : [
+            "rapid_fire"
+          ]
+        }
+      ]
+    },
+    "combi_shotgun" : {
+      "name" : "Combi-Shotgun",
+      "profiles" : [
+        {
+          "name" : "Shotgun",
+          "attacks" : 1,
+          "short" : 6,
+          "medium" : 12,
+          "rules" : [
+            "brutal",
+            "assault"
+          ]
+        },
+        {
+          "name" : "Rifle",
+          "attacks" : 1,
+          "short" : 12,
+          "medium" : 24,
+          "rules" : [
+            "rapid_fire"
+          ]
+        }
+      ]
+    },
+    "combi_fusion" : {
+      "name" : "Combi-Fusion Rifle",
+      "profiles" : [
+        {
+          "name" : "Fusion",
+          "attacks" : 1,
+          "ap" : 3,
+          "short" : 12,
+          "medium" : 24,
+          "rules" : [
+            {
+              "id" : "critical",
+              "x" : 1
+            }
+          ]
+        },
+        {
+          "name" : "Rifle",
+          "attacks" : 1,
+          "short" : 12,
+          "medium" : 24,
+          "rules" : [
+            "rapid_fire"
+          ]
+        }
+      ]
+    },
+    "fusion_pistol" : {
+      "name" : "Fusion Pistol",
+      "attacks" : 1,
+      "ap" : 3,
+      "short" : 6,
+      "rules" : [
+        "pistol",
+        {
+          "id" : "critical",
+          "x" : 1
+        }
+      ]
+    },
+    "fusion_rifle" : {
+      "name" : "Fusion Rifle",
+      "attacks" : 1,
+      "ap" : 3,
+      "short" : 12,
+      "medium" : 24,
+      "rules" : [
+        {
+          "id" : "critical",
+          "x" : 1
+        }
+      ]
+    },
+    "fusion_cannon" : {
+      "name" : "Fusion Cannon",
+      "attacks" : 1,
+      "ap" : 3,
+      "short" : 18,
+      "medium" : 36,
+      "rules" : [
+        {
+          "id" : "blast",
+          "x" : 3
+        },
+        {
+          "id" : "critical",
+          "x" : 1
+        }
+      ]
+    },
+    "trample" : {
+      "name" : "Trample",
+      "attacks" : 1,
+      "ap" : 1,
+      "short" : "Melee"
+    },
+    "whip" : {
+      "name" : "Whip",
+      "attacks" : 1,
+      "ap" : 1,
+      "short" : "Melee",
+      "rules" : [
+        {
+          "id" : "reach",
+          "x" : 1
+        }
+      ]
+    },
+    "burst_rifle" : {
+      "name" : "Burst Rifle",
+      "short" : 9,
+      "medium" : 18,
+      "ap" : 5,
+      "attacks" : 1,
+      "rules" : [
+        {
+          "id" : "blast",
+          "x" : 2
+        }
+      ]
+    },
+    "burst_pistol" : {
+      "name" : "Burst Pistol",
+      "short" : 6,
+      "ap" : 5,
+      "attacks" : 1,
+      "rules" : [
+        {
+          "id" : "blast",
+          "x" : 2
+        }
+      ]
+    },
+    "twin_burst_rifle" : {
+      "name" : "Twin Burst Rifle",
+      "short" : 9,
+      "medium" : 18,
+      "ap" : 5,
+      "attacks" : 2,
+      "rules" : [
+        {
+          "id" : "blast",
+          "x" : 2
+        }
+      ]
+    },
+    "twin_plasma_cannon" : {
+      "name" : "Twin Plasma Cannon",
+      "attacks" : 2,
+      "ap" : 2,
+      "short" : 18,
+      "medium" : 36,
+      "rules" : [
+        "overcharge",
+        {
+          "id" : "blast",
+          "x" : 3
+        }
+      ]
+    },
+    "twin_flamethrower" : {
+      "name" : "Twin Flamethrower",
+      "attacks" : 6,
+      "ap" : 1,
+      "short" : 6,
+      "medium" : 12,
+      "rules" : [
+        "flame"
+      ]
+    },
+    "twin_fusion_rifle" : {
+      "name" : "Twin Fusion Rifle",
+      "attacks" : 2,
+      "ap" : 3,
+      "short" : 12,
+      "medium" : 24,
+      "rules" : [
+        {
+          "id" : "critical",
+          "x" : 1
+        }
+      ]
+    },
+    "twin_fusion_cannon" : {
+      "name" : "Twin Fusion Cannon",
+      "attacks" : 2,
+      "ap" : 3,
+      "short" : 18,
+      "medium" : 36,
+      "rules" : [
+        {
+          "id" : "blast",
+          "x" : 3
+        },
+        {
+          "id" : "critical",
+          "x" : 1
+        }
+      ]
+    },
+    "smg" : {
+      "name" : "Submachine Gun",
+      "attacks" : 1,
+      "short" : 6,
+      "medium" : 12,
+      "rules" : [
+        "rapid_fire",
+        "assault"
+      ]
+    },
+    "twin_smg" : {
+      "name" : "Twin Submachine Gun",
+      "attacks" : 2,
+      "short" : 6,
+      "medium" : 12,
+      "rules" : [
+        "rapid_fire",
+        "assault"
+      ]
+    },
+    "heavy_smg" : {
+      "name" : "Heavy Submachine Gun",
+      "ap" : 1,
+      "attacks" : 1,
+      "medium" : 12,
+      "short" : 6,
+      "rules" : [
+        "rapid_fire",
+        "assault"
+      ]
+    },
+    "twin_heavy_smg" : {
+      "name" : "Twin Heavy Submachine Gun",
+      "ap" : 1,
+      "attacks" : 2,
+      "medium" : 12,
+      "short" : 6,
+      "rules" : [
+        "rapid_fire",
+        "assault"
+      ]
+    },
+    "shotgun_pistol" : {
+      "name" : "Sawed-off Shotgun",
+      "attacks" : 1,
+      "ap" : 1,
+      "short" : 9,
+      "rules" : [
+        "assault"
+      ]
+    },
+    "combi_rifle" : {
+      "name" : "Combi-Rifle",
+      "profiles" : [
+        {
+          "name" : "Single",
+          "attacks" : 1,
+          "short" : 12,
+          "medium" : 24,
+          "rules" : [
+            "rapid_fire"
+          ]
+        },
+        {
+          "name" : "Rapid",
+          "attacks" : 2,
+          "short" : 12,
+          "medium" : 24,
+          "rules" : [
+            "rapid_fire",
+            "unreliable"
+          ]
+        }
+      ]
+    }
+  },
+  "rules" : {
+    "legend_wounds" : {
+      "name" : "Resilient",
+      "description" : "This model gains Wounds(+1).",
+      "points" : 10
+    },
+    "legend_courage" : {
+      "name" : "Inspired",
+      "description" : "This model gains +1 Courage.",
+      "points" : 10
+    },
+    "shield_generator" : {
+      "name" : "Shield Generator",
+      "description" : "This and all friendly units within 6\" have +1 Save.",
+      "points" : 10
+    },
+    "stun" : {
+      "name" : "Stun",
+      "description" : "If this weapon hits its target, that unit gets -1 Strength and -1 Accuracy for its next attack.",
+      "points" : 2
+    },
+    "entangle" : {
+      "name" : "Entangle",
+      "description" : "Units hit by this weapon lose 2\" from their next move.",
+      "points" : 1
+    },
+    "insignificant" : {
+      "name" : "Insignificant",
+      "description" : "This model may not be used to control or contest objectives.",
+      "points" : -5
+    },
+    "distract" : {
+      "name" : "Distracting",
+      "description" : "Enemy units within 6\" get -1 Strength.",
+      "points" : 3
+    },
+    "homing" : {
+      "name" : "Homing",
+      "description" : "This weapon hits at Accuracy +1.",
+      "points" : [
+        "weapon.attacks"
+      ]
+    },
+    "melee_tactics" : {
+      "name" : "Melee Tactics",
+      "inputs" : [
+        "x"
+      ],
+      "description" : "When this unit is activated, choose up to X friendly _Infantry_ units within 6\". This unit and those units may re-roll failed Strength tests of 9+ until the end of the round.",
+      "points" : [
+        "rule.x",
+        {
+          "multiply" : 10
+        }
+      ]
+    },
+    "ranged_tactics" : {
+      "name" : "Ranged Tactics",
+      "inputs" : [
+        "x"
+      ],
+      "description" : "When this unit is activated, choose up to X friendly _Infantry_ units within 6\". This unit and those units may re-roll failed Accuracy tests of 9+ until the end of the round.",
+      "points" : [
+        "rule.x",
+        {
+          "multiply" : 10
+        }
+      ]
+    }
+  }
+}
